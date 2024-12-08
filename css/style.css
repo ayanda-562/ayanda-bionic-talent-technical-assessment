@@ -244,3 +244,15 @@ h4 {
         line-height: 1.2rem;
     }
   }
+
+  @media (max-width: 414px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+  }
