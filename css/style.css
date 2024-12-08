@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100..900&display=swap');
+/* CSS for the Whole Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #ab3c3c;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #ab3c3c;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #f5f5f5;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #f5f5f5;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+* p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #314b57;
+    font-size: 1rem;
+}
+
+* a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ab3c3c;
+}
+
+.page-width {
+    width: 80%;
+    margin: 0rem auto;
+}
+
+/* End */
+
+/* CSS for The Header Section */
+.header-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #314b57;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.services-image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.services-image-list .image-container img {
+    height: 8.3rem;
+    place-items: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+}
+
+/* End */
+
+/* CSS for Our Service Area */
+.grid-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+}
+
+.row .imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.row .contentWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row .contentWrapper span.textWrapper {
+    display: block;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.row .contentWrapper p {
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.row .contentWrapper a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.row .contentWrapper a:hover {
+    color: #314b57;
+    transition: all .5s;
+}
+
+/* End */
+
+/* CSS for Helpful Heating and Air Articles section */
+.article-section {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-section .article-content {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.article-section .article-content .title {
+    margin: auto;
+    text-align: left;
+}
+
+.article-section .article-content .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 1rem auto;
+    overflow-x: hidden;
+}
+
+.article-section .article-content .cards .card {
+    width: 100%;
+    overflow: hidden;
+}
+
+.article-section .article-content .cards .card img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.article-section .article-content .cards .card img:hover {
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    transform: scale(1.09);
+}
+
+.article-section .article-content .cards .card .article {
+    padding: 0rem;
+}
+
+.article-section .article-content .cards .card .article p {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.article-section .article-content .cards .card .button {
+    color: #ab3c3c;
+}
+
+.article-section .article-content .cards .card .button:hover {
+    color: #314b57;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+/* End */
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Styles for tablets and smaller */
+    .row {
+        grid-template-columns: 1fr;
+    }
+  }
+
+@media (max-width: 992px) {
+    /* Styles for tablets and smaller */
+    .article-section .article-content .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+  }
+
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller */
+    .article-section .article-content .cards {
+        grid-template-columns: 1fr;
+    }
+    .row {
+        width: 80%;
+    }
+    .row .contentWrapper p {
+        line-height: 1.2rem;
+    }
+  }
