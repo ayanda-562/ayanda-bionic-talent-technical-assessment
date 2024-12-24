@@ -53,8 +53,9 @@ h4 {
 }
 
 .page-width {
-    width: 80%;
+    width: 100%;
     margin: 0rem auto;
+    max-width: 1300px;
 }
 
 /* End */
