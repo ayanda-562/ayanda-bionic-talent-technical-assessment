@@ -222,7 +222,7 @@ h4 {
     }
   }
 
-@media (min-width: 1025px) and (max-width: 1132px) {
+@media (min-width: 1025px) and (max-width: 1148px) {
     /* Styles for tablets and smaller */
     .image-container {
         width: 23.5%;
